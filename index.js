@@ -18,6 +18,18 @@ async function GetEventData(txHash, event) {
 }
 
 async function main() {
+    console.log(57404800, 'totalMinted', (
+        await MBW.methods.totalMinted().call({
+            from: '0xeA7D9225F74BF8206Ac8d9AD358b7Cc2c716EE89'
+        }, 57404800)
+    ) / 10**18)
+
+    console.log(57404800, 'totalSupply', (
+        await tETH.methods.totalSupply().call({
+            from: '0xeA7D9225F74BF8206Ac8d9AD358b7Cc2c716EE89'
+        }, 57404800)
+    )/ 10 ** 18)
+
     console.log(57404801, 'totalMinted', (
         await MBW.methods.totalMinted().call({
             from: '0xeA7D9225F74BF8206Ac8d9AD358b7Cc2c716EE89'
