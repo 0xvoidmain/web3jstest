@@ -1,7 +1,7 @@
 const web3 = require('web3')
 
 const Web3 = new web3(
-    new web3.providers.HttpProvider("https://rpc.tomochain.com")
+    new web3.providers.HttpProvider("https://135.125.8.163:8585")
 )
 
 const MBW = new Web3.eth.Contract(require('./mintburnwaper.json'), '0x325b5BAba7ac1cDE57FB7Ae3E0a0Ea8640486BD1')
