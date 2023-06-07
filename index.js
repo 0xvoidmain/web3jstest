@@ -5,7 +5,7 @@ const Web3 = new web3(
 )
 
 const MBW = new Web3.eth.Contract(require('./mintburnwaper.json'), '0x325b5BAba7ac1cDE57FB7Ae3E0a0Ea8640486BD1')
-const tETH = new Web3.eth.Contract(require('./mintburnwaper.json'), '0xA1Ff8559646a79e47ECDfaCA60272F3081998569')
+const tETH = new Web3.eth.Contract(require('./erc20.json'), '0xA1Ff8559646a79e47ECDfaCA60272F3081998569')
 
 async function GetEventData(txHash, event) {
     var transaction = await Web3.eth.getTransactionReceipt(txHash)
